@@ -1,0 +1,149 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body,
+html {
+    font-family: Arial, sans-serif;
+    scroll-behavior: smooth;
+    height: 100%;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* Header */
+header {
+    background: rgb(21,76,121); /* Changed from mintgreen to rgb(21,76,121) */
+    color: white;
+    padding: 20px 0;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.nav a {
+    color: white ;
+    margin-left: 20px;
+    text-decoration: none;
+}
+
+.nav a:hover {
+    text-decoration: underline;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* Section Full Screen */
+.section {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Specific Backgrounds for each page */
+.home {
+    background: #eeeee4;
+    color: #333;
+}
+
+.about {
+    background: #eeeee4;
+    color: #333;
+}
+
+.services {
+    background:#eeeee4;
+    color: #333;
+}
+
+.portfolio {
+    background: #eeeee4;
+    color: #333;
+}
+
+.contact {
+    background: #eeeee4;
+    color: #333;
+}
+
+/* Portfolio Grid */
+.portfolio-grid {
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.portfolio-item {
+    background: white;
+    padding: 30px;
+    border: 1px solid #ccc;
+    flex: 1 1 250px;
+    max-width: 300px;
+}
+
+/* Form */
+form {
+    max-width: 600px;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+input,
+textarea {
+    padding: 10px;
+    border: 1px solid #999;
+    border-radius: 4px;
+}
+
+button {
+    padding: 10px;
+    background: rgb(21,76,121); /* Changed from mintgreen to rgb(21,76,121) */
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #1a5d91; /* A slightly lighter shade for hover effect */
+}
+
+/* Footer */
+footer {
+    background: rgb(21,76,121); /* Changed from mintgreen to rgb(21,76,121) */
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .nav {
+        flex-direction: column;
+    }
+
+    .portfolio-grid {
+        flex-direction: column;
+        align-items: center;
+    }
+}
