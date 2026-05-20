@@ -1,45 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    .social-icons {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 15px;
+      margin-top: 30px;
+    }
+
+    .social-icons a img {
+      width: 40px;
+      height: 40px;
+      transition: transform 0.2s;
+    }
+
+    .social-icons a img:hover {
+      transform: scale(1.1);
+    }
+  </style>
 </head>
-
 <body>
-    <header>
-        <div class="container nav">
-            <div class="logo">Dipesh Silwal</div>
-            <nav>
-                <a href="index.html">Home</a>
-                <a href="about.html">About</a>
-                <a href="services.html">Services</a>
-                <a href="portfolio.html">Portfolio</a>
-                <a href="contact.html">Contact</a>
-            </nav>
-        </div>
-    </header>
+  <header>
+    <div class="container nav">
+      <div class="logo">Dipesh Silwal</div>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="resume.html">About</a>
+        <a href="skills.html">Skills</a>
+        <a href="projects.html">Projects</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
 
-    <section class="section contact">
-        <div class="container">
-            <h1>Contact Me</h1>
-            <form action="#">
-                <input type="text" placeholder="Your Name" required>
-                <input type="email" placeholder="Your Email" required>
-                <textarea placeholder="Your Message" rows="5" required></textarea>
-                <button type="submit">Send Message</button>
-            </form>
-        </div>
-    </section>
+  <section class="section contact">
+    <div class="container">
+      <p>Contact Me</P>
+      <p>I'd love to hear from you! Please fill out the form below.</p>
 
-    <footer>
-        <div class="container">
-            <p>&copy; 2025 Dipesh Silwal. All rights reserved.</p>
-        </div>
-    </footer>
+      <form action="#" method="post">
+        <input type="text" name="name" placeholder="Your Name" required />
+        <input type="email" name="email" placeholder="Your Email" required />
+        <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
 
+      <div class="social-icons">
+        <a href="https://wa.me/qr/2MRGF44LHXKUB1" target="_blank"><img src="icons/whatsapp.png" alt="WhatsApp" /></a>
+        <a href="https://www.instagram.com/deepessh17/profilecard/?igsh=MWJ3cmZwczAzZWVubg==" target="_blank"><img src="icons/instagram.png" alt="Instagram" /></a>
+        <a href="https://www.linkedin.com/in/dipesh-silwal-3b0014316utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank"><img src="icons/linkedin.png" alt="LinkedIn" /></a>
+        <a href="https://github.com/silwaldipesh01" target="_blank"><img src="icons/github.png" alt="GitHub" /></a>
+        <a href="mailto:silwaldipesh01@gmail.com"><img src="icons/gmail.png" alt="Email" /></a>
+        <a href="https://www.facebook.com/silwaldipesh01" target="_blank"><img src="icons/facebook.png" alt="Facebook" /></a>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 Dipesh Silwal. All rights reserved.</p>
+    </div>
+  </footer>
 </body>
-
 </html>
